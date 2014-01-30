@@ -13,6 +13,15 @@
 @end
 
 @implementation ViewController
+- (IBAction)switchOnOff:(UISwitch *)sender {
+    
+    if (sender.on == true) {
+        self.view.backgroundColor = [UIColor greenColor];
+    } else {
+        self.view.backgroundColor = [UIColor redColor];
+    }
+    
+}
 
 - (void)viewDidLoad
 {
